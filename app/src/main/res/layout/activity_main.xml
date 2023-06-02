@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F57C00"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+
+
+        <TextView
+            android:id="@+id/title_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/contest_cake"
+            android:textColor="#0B0B0B"
+            android:textSize="25sp"
+            android:visibility="visible">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/bienvenido_a_contest_cake_2020_por_favor_rellene_el_formulario"
+            android:textColor="#000000"
+            android:visibility="visible">
+
+        </TextView>
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/nombre"
+        android:minHeight="48dp"
+        android:text=""
+        android:inputType="text">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/apellido"
+        android:minHeight="48dp"
+        android:text=""
+        android:inputType="text">
+
+    </EditText>
+
+        <CheckBox
+            android:id="@+id/checkBoxAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="OnCheck"
+            android:text="@string/mayor_de_18_a_os" />
+
+        <EditText
+            android:id="@+id/editTextEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eres_hombre_o_mujer"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/hombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hombre">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/mujer"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mujer">
+
+            </RadioButton>
+        </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxContest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="OnCheck"
+        android:text="@string/he_participado_en_otro_concurso" />
+
+    <EditText
+            android:id="@+id/editTextConcurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:src="@mipmap/imagen_app" />
+
+        <Button
+            android:id="@+id/registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="ValidarCampos"
+            android:text="@string/registrar"
+            tools:ignore="RtlHardcoded">
+
+        </Button>
+</LinearLayout>

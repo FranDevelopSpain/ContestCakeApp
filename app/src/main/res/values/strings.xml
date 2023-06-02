@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ContestCakeApp</string>
+    <string name="eres_hombre_o_mujer">¿Eres hombre o mujer?</string>
+    <string name="contest_cake">Contest Cake</string>
+    <string name="bienvenido_a_contest_cake_2020_por_favor_rellene_el_formulario">Bienvenido a contest cake 2020. Por favor rellene el formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="mayor_de_18_a_os">Mayor de 18 años</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="he_participado_en_otro_concurso">He participado en otro concurso</string>
+    <string name="registrar">Registrar</string>
+    <string name="validate_str_success">Registro con éxito</string>
+    <string name="error_name">Introduzca nombre</string>
+    <string name="error_apellido">Introduzca apellido</string>
+    <string name="error_edad">Introduzca edad</string>
+    <string name="error_menor">Debe ser mayor de edad</string>
+    <string name="error_concurso_no_especificado">Introduzca nombre concurso</string>
+</resources>
